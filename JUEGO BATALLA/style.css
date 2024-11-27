@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Climate+Crisis&family=Creepster&family=Press+Start+2P&family=Rammetto+One&family=Righteous&family=Rubik+Distressed&family=Russo+One&family=Titan+One&display=swap');
+
+body{
+    background-image: url("https://w0.peakpx.com/wallpaper/560/359/HD-wallpaper-elder-scrolls-forest-fantasy-video-game-waterfall-magic-landscape.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: blur(2px) ;
+} 
+
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#seleccionar-mascota h1{
+    font-size: 100px;
+    color: #ffebb7;
+    margin: 30px;
+}
+#seleccionar-mascota h2{
+    margin-bottom: 40px;
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #eccdb7;
+    font-size: 50px;
+}
+.tarjetas , .tarjetas-ataque {
+  display: flex;
+  gap: 20px;
+}
+
+
+.tarjeta-de-mokepon {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background: #75c2f62d;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 70px;
+  margin: 20px;
+}
+
+.tarjeta-de-mokepon p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    margin: 10px;
+    color: #D8C4B6;
+}
+
+.tarjeta-de-mokepon img{
+    width: 220px;
+}
+
+#boton-mascota {
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+}
+ input {
+  display: none;
+}
+input:checked + label{
+    background: #6cf7e9;
+}
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+.titulo{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Climate Crisis', cursive;
+    font-family: 'Creepster', cursive;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Rammetto One', cursive;
+    font-family: 'Righteous', cursive;
+    font-family: 'Rubik Distressed', cursive;
+    font-family: 'Russo One', sans-serif;
+    font-family: 'Titan One', cursive;
+    color: #fbeeaceb;
+    margin: 30px;
+    font-size: 100px;
+}
+.subtitulo{
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #c8d1f6;
+    font-size: 50px;
+}
+.boton-ataques{
+    align-items: center;
+    background: #ffc98384;
+    width: 150px;
+    height: 60px;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-color: rgba(224, 129, 20, 0.795);
+    border-radius: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.boton-ataques:hover{
+    background-color: #eccdb7;
+}
+
+#mensaje{
+    align-items: center;
+    padding: 10px;
+    border-radius: 70px;  
+    box-sizing: border-box;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40PX;
+    color: #F2DEBA;
+    
+    margin: 20px;
+}
+#boton-reiniciar{
+    background-color: rgb(255, 178, 176);
+    display: flex;
+    justify-self: center;
+    width: auto;
+    height: 45px;
+    color: white;
+    font-size: 30px;
+    border: none;
+    border-radius: 8px;
+
+}
+.ataques{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    color: aliceblue;
+    font-size: 30px;
+    
+}
+#vidas-jugador, #vidas-enemigo{
+    color: #F2DEBA;
+    font-size: 30px;
+    height: 50px;
+    width: 205px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ataques-jugador , .ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7593f60a;
+    border-color: rgba(169, 194, 240, 0.336);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+@media(max-width: 360px){
+    .titulo{
+        font-size: 60px;
+    }
+    .subtitulo{
+        font-size: 35px;
+    }
+    #boton-mascota{
+        width: 300px;
+    }
+    .tarjetas , .tarjetas-ataque{
+        flex-direction: column;
+    }
+    .tarjeta-de-mokepon{
+        margin: 55px;
+    }
+    .titulo2{
+        font-size: 60px;
+    }
+}
